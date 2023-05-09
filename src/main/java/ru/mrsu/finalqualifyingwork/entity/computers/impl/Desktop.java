@@ -10,6 +10,7 @@ import ru.mrsu.finalqualifyingwork.enums.ComputerTypes;
 @Setter
 public class Desktop extends Computer {
     private DesktopCase desktopCase;
+
     Desktop() {
         super(ComputerTypes.DESKTOP);
     }

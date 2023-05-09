@@ -4,11 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.validation.annotation.Validated;
@@ -24,7 +22,7 @@ import ru.mrsu.finalqualifyingwork.enums.ComputerTypes;
         @JsonSubTypes.Type(value = Desktop.class, name = ComputerTypes.Fields.DESKTOP)
 })
 @Document("computer")
-@JsonIgnoreProperties(value = { "type" }, allowSetters = true)
+@JsonIgnoreProperties(value = {"type"}, allowSetters = true)
 @Validated
 public class Computer {
     @Id

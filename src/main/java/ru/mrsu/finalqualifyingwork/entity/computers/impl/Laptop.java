@@ -1,7 +1,6 @@
 package ru.mrsu.finalqualifyingwork.entity.computers.impl;
 
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import ru.mrsu.finalqualifyingwork.entity.computers.Computer;
 import ru.mrsu.finalqualifyingwork.entity.computers.Specifications;

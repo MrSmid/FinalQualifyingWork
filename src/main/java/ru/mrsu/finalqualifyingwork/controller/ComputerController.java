@@ -11,12 +11,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import ru.mrsu.finalqualifyingwork.dto.request.BetweenRequest;
 import ru.mrsu.finalqualifyingwork.dto.request.ComputerTypeRequest;
 import ru.mrsu.finalqualifyingwork.entity.computers.Computer;
-import ru.mrsu.finalqualifyingwork.repository.impl.ComputerRepository;
 import ru.mrsu.finalqualifyingwork.service.ComputerService;
 
 import java.util.List;
